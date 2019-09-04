@@ -114,7 +114,7 @@ function MYSQL(){
 			else
 				exit 1
 			fi
-			make   >/dev/null 2>&1
+			make  -j4 >/dev/null 2>&1
 			return=$?
 			if [  "${return}" -eq 0 ] ; then
 				echo "Compile completed, compile no problem, continue to implement make install"
